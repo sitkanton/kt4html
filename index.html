@@ -1,0 +1,150 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Интернет-магазин</title> 
+    <style> 
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f4; 
+        } 
+        header { 
+            background: #333; 
+            color: #fff; 
+            padding: 20px 0; 
+            position: relative;
+        } 
+        header h1 { 
+            margin: 0; 
+            text-align: center; 
+            cursor: pointer; 
+            transition: transform 0.3s, color 0.3s; 
+        } 
+        header h1:hover { 
+            transform: scale(1.1); 
+            color: #ffd700; 
+        } 
+        nav ul { 
+            list-style: none; 
+            padding: 0; 
+            text-align: center; 
+        } 
+        nav ul li { 
+            display: inline; 
+            margin: 0 15px; 
+            transition: color 0.3s; 
+        } 
+        nav ul li a { 
+            color: #fff; 
+            text-decoration: none; 
+            font-weight: bold; 
+            transition: color 0.3s; 
+        } 
+        nav ul li a:hover { 
+            color: #ffd700; 
+        } 
+        nav ul li:hover { 
+            animation: bounce 0.5s; 
+        } 
+        @keyframes bounce { 
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 
+            40% { transform: translateY(-10px); } 
+            60% { transform: translateY(-5px); } 
+        } 
+        main { 
+            padding: 20px; 
+            display: flex; 
+            flex-wrap: wrap; 
+        } 
+        section { 
+            flex: 3; 
+            margin-right: 20px; 
+            margin-bottom: 20px; 
+            background: #fff; 
+            padding: 15px; 
+            border-radius: 8px; 
+            box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+        } 
+        aside { 
+            flex: 1; 
+            background: #e2e2e2; 
+            padding: 15px; 
+            border-radius: 8px; 
+        } 
+        article { 
+            margin-bottom: 15px; 
+        } 
+        article h3 { 
+            margin: 0; 
+        } 
+        mark { 
+            background-color: #ff0; 
+            color: #000; 
+        } 
+        figure { 
+            text-align: center; 
+        } 
+        .slider { 
+            position: relative; 
+            max-width: 100%; 
+            overflow: hidden; 
+            margin: 0 auto; 
+        } 
+        .slider img { 
+            width: 100%; 
+            animation: fade 5s infinite; 
+        } 
+        @keyframes fade { 
+            0%, 100% { opacity: 1; } 
+            50% { opacity: 0; } 
+        } 
+        footer { 
+            text-align: center; 
+            padding: 10px 0; 
+            background: #333; 
+            color: #fff; 
+        } 
+    </style> 
+</head> 
+<body> 
+    <header> 
+        <h1 onclick="scrollToTop()">Интернет-магазин "SitkaShop"</h1> 
+        <nav> 
+            <ul> 
+                <li><a href="#">Главная</a></li> 
+                <li><a href="#">Каталог</a></li> 
+                <li><a href="#">О нас</a></li> 
+                <li><a href="#">Контакты</a></li> 
+            </ul> 
+        </nav> 
+    </header> 
+    <main> 
+        <section> 
+            <header> 
+                <h2>Текущие предложения</h2> 
+            </header> 
+            <div class="slider"> 
+                <img src="https://avatars.mds.yandex.net/i?id=67f3d0de27e0614301d2d44fde5a06a8f8fdbd08-5628812-images-thumbs&n=13" alt="Смартфон iPhone 16"> 
+                <img src="https://avatars.mds.yandex.net/i?id=3134fbc1db4d721ee776ee9c9d5c3ff1c45b5ddd-12827323-images-thumbs&n=13" alt="Ноутбук MacBook Air"> 
+            </div> 
+        </section> 
+        <aside> 
+            <h2>Специальное предложение</h2> 
+            <p>Скидка 15% на все товары при оплате картой "Мир".</p> 
+        </aside> 
+    </main> 
+    <footer> 
+        <p>© 2024 Интернет-магазин "SitkaShop". Все права защищены.</p> 
+        <p>Контакты: info@sitkashop.ru | Телефон: +7 (495) 111-11-11</p> 
+    </footer> 
+
+    <script> 
+        function scrollToTop() { 
+            window.scrollTo({ top: 0, behavior: 'smooth' }); 
+        } 
+    </script> 
+</body> 
+</html>
